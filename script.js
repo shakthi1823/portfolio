@@ -15,6 +15,23 @@ window.addEventListener('scroll', () => {
     }
 });
 
+// Mobile Menu Toggle
+const mobileMenu = document.getElementById('mobile-menu');
+const navLinks = document.querySelector('nav ul');
+
+mobileMenu.addEventListener('click', () => {
+    navLinks.classList.toggle('active');
+    // Change icon to 'X' when active
+    const icon = mobileMenu.querySelector('i');
+    if (navLinks.classList.contains('active')) {
+        icon.classList.remove('fa-bars');
+        icon.classList.add('fa-times');
+    } else {
+        icon.classList.remove('fa-times');
+        icon.classList.add('fa-bars');
+    }
+});
+
 // Smooth scrolling for navigation links
 document.querySelectorAll('nav a').forEach(anchor => {
     anchor.addEventListener('click', function (e) {
@@ -23,6 +40,12 @@ document.querySelectorAll('nav a').forEach(anchor => {
         const targetSection = document.querySelector(targetId);
 
         if (targetSection) {
+            // Close mobile menu if open
+            navLinks.classList.remove('active');
+            const icon = mobileMenu.querySelector('i');
+            icon.classList.remove('fa-times');
+            icon.classList.add('fa-bars');
+
             window.scrollTo({
                 top: targetSection.offsetTop - 80,
                 behavior: 'smooth'

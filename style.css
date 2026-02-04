@@ -137,6 +137,13 @@ nav ul li a:hover {
   color: var(--primary);
 }
 
+.menu-toggle {
+  display: none;
+  font-size: 1.5rem;
+  color: var(--text-primary);
+  cursor: pointer;
+}
+
 /* Hero Section */
 .hero {
   min-height: 100vh;
@@ -196,6 +203,7 @@ nav ul li a:hover {
 
 .hero-content span {
   background: linear-gradient(135deg, var(--primary), var(--accent), var(--secondary));
+  background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   filter: drop-shadow(0 0 30px rgba(124, 58, 237, 0.4));
@@ -443,6 +451,7 @@ section {
 .skill-pill i {
   font-size: 1.5rem;
   background: linear-gradient(135deg, var(--primary), var(--secondary));
+  background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
@@ -478,6 +487,7 @@ footer {
     flex-direction: column;
     text-align: center;
     padding-top: 120px;
+    padding-bottom: 60px;
   }
 
   .hero-content {
@@ -498,12 +508,64 @@ footer {
   }
 }
 
-@media (max-width: 600px) {
-  nav ul {
-    display: none;
+@media (max-width: 768px) {
+  .menu-toggle {
+    display: block;
   }
 
+  nav ul {
+    position: fixed;
+    top: 0;
+    right: -100%;
+    width: 70%;
+    height: 100vh;
+    background: rgba(10, 14, 39, 0.95);
+    backdrop-filter: blur(20px);
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transition: 0.5s ease;
+    z-index: 999;
+  }
+
+  nav ul.active {
+    right: 0;
+  }
+
+  nav ul li {
+    margin: 1.5rem 0;
+  }
+
+  nav ul li a {
+    font-size: 1.5rem;
+  }
+
+  section {
+    padding: 60px 5%;
+  }
+
+  .section-header h2 {
+    font-size: 2rem;
+  }
+}
+
+@media (max-width: 480px) {
   .hero-content h1 {
-    font-size: 3rem;
+    font-size: 2.5rem;
+  }
+
+  .cta-group {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .btn {
+    width: 100%;
+    text-align: center;
+  }
+
+  .hero-image .img-container {
+    width: 280px;
+    height: 350px;
   }
 }
