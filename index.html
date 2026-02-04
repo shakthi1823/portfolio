@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shakthi M | Web Graphic Designer</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <!-- AOS for scroll animations -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+</head>
+
+<body>
+    <canvas id="particleCanvas"></canvas>
+    <nav id="navbar">
+        <div class="logo">SHAKTHI.</div>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#projects">Work</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <!-- Hero Section -->
+        <section id="home" class="hero">
+            <div class="hero-content" data-aos="fade-right" data-aos-duration="1000">
+                <h2>I AM A</h2>
+                <h1>WEB GRAPHIC <span>DESIGNER.</span></h1>
+                <p>Turning complex ideas into stunning visual experiences. MCA student with a passion for interactive
+                    design and clean code.</p>
+                <div class="cta-group">
+                    <a href="#projects" class="btn btn-primary">View My Work</a>
+                    <a href="#contact" class="btn btn-secondary">Get In Touch</a>
+                </div>
+            </div>
+            <div class="hero-image" data-aos="fade-left" data-aos-duration="1000">
+                <div class="img-container">
+                    <img src="C:/Users/SHAKTHI/.gemini/antigravity/brain/0d85cb4b-5560-418d-b94f-ce91375a33e4/uploaded_media_1770212151735.jpg"
+                        alt="Shakthi M">
+                    <div class="img-overlay"></div>
+                </div>
+            </div>
+            <div class="bg-blob"></div>
+        </section>
+
+        <!-- Projects Section -->
+        <section id="projects">
+            <div class="section-header" data-aos="fade-up">
+                <h2>Featured Projects</h2>
+                <div class="underline"></div>
+            </div>
+            <div class="projects-grid">
+                <!-- Project 1 -->
+                <div class="project-card glass" data-aos="fade-up" data-aos-delay="100">
+                    <div class="project-thumbnail">
+                        <img src="C:/Users/SHAKTHI/.gemini/antigravity/brain/0d85cb4b-5560-418d-b94f-ce91375a33e4/hrms_project_preview_1770212896982.png"
+                            alt="HRMS Social Connect">
+                    </div>
+                    <h3>HRMS Social Connect</h3>
+                    <p>A web-based Human Resource Management System with social networking features for employee
+                        engagement.</p>
+                    <div class="tags">
+                        <span class="tag">React</span>
+                        <span class="tag">Tailwind</span>
+                        <span class="tag">PostgreSQL</span>
+                    </div>
+                </div>
+                <!-- Project 2 -->
+                <div class="project-card glass" data-aos="fade-up" data-aos-delay="200">
+                    <div class="project-thumbnail">
+                        <img src="C:/Users/SHAKTHI/.gemini/antigravity/brain/0d85cb4b-5560-418d-b94f-ce91375a33e4/smart_agri_preview_1770214125701.png"
+                            alt="Smart Agriculture Project">
+                    </div>
+                    <h3>Smart Agriculture System</h3>
+                    <p>A React.js application that predicts plant diseases through image analysis and provides tailored
+                        solutions for crop health.</p>
+                    <div class="tags">
+                        <span class="tag">React.js</span>
+                        <span class="tag">ML Integration</span>
+                        <span class="tag">Crop Health</span>
+                    </div>
+                </div>
+                <!-- Add more projects here -->
+            </div>
+        </section>
+
+        <!-- Skills Section -->
+        <section id="skills">
+            <div class="section-header" data-aos="fade-up">
+                <h2>My Toolkit</h2>
+                <div class="underline"></div>
+            </div>
+            <div class="skills-container">
+                <div class="skill-pill glass" data-aos="zoom-in" data-aos-delay="100">
+                    <i class="fab fa-html5"></i> <span>HTML5</span>
+                </div>
+                <div class="skill-pill glass" data-aos="zoom-in" data-aos-delay="150">
+                    <i class="fab fa-css3-alt"></i> <span>CSS3</span>
+                </div>
+                <div class="skill-pill glass" data-aos="zoom-in" data-aos-delay="200">
+                    <i class="fab fa-js-square"></i> <span>JavaScript</span>
+                </div>
+                <div class="skill-pill glass" data-aos="zoom-in" data-aos-delay="250">
+                    <i class="fab fa-react"></i> <span>React.js</span>
+                </div>
+                <div class="skill-pill glass" data-aos="zoom-in" data-aos-delay="300">
+                    <i class="fab fa-python"></i> <span>Python</span>
+                </div>
+                <div class="skill-pill glass" data-aos="zoom-in" data-aos-delay="350">
+                    <i class="fa-solid fa-database"></i> <span>SQL</span>
+                </div>
+                <div class="skill-pill glass" data-aos="zoom-in" data-aos-delay="400">
+                    <i class="fab fa-figma"></i> <span>Figma</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- Experience Section -->
+        <section id="experience">
+            <div class="section-header" data-aos="fade-up">
+                <h2>Experience</h2>
+                <div class="underline"></div>
+            </div>
+            <div class="experience-timeline">
+                <div class="project-card glass" style="margin-bottom: 2rem;" data-aos="fade-right">
+                    <h3>Web Development Intern & Team Lead</h3>
+                    <p>UptoSkills | June 2025 – Present</p>
+                    <p>Led a team of 6 interns, developed web apps using React.js and Tailwind CSS.</p>
+                </div>
+                <div class="project-card glass" data-aos="fade-left">
+                    <h3>Python Development Intern</h3>
+                    <p>Infogro Technologies | May 2025 – June 2025</p>
+                    <p>Assisted in designing and testing Python-based applications.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact">
+            <div class="section-header" data-aos="fade-up">
+                <h2>Let's Collaborate</h2>
+                <div class="underline"></div>
+            </div>
+            <div style="text-align: center;" data-aos="fade-up">
+                <p style="color: var(--text-secondary); margin-bottom: 3rem;">I'm always open to discussing new
+                    projects, creative ideas or opportunities.</p>
+                <div class="cta-group">
+                    <a href="mailto:lokeel99@gmail.com" class="btn btn-primary">Email Me</a>
+                    <a href="https://www.linkedin.com/in/shakthi-m-929555250/" class="btn btn-secondary">LinkedIn</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="social-links">
+            <a href="https://github.com/shakthi1823" target="_blank"><i class="fab fa-github"></i></a>
+            <a href="https://www.linkedin.com/in/shakthi-m-929555250/" target="_blank"><i
+                    class="fab fa-linkedin"></i></a>
+            <a href="mailto:lokeel99@gmail.com"><i class="fa-solid fa-envelope"></i></a>
+        </div>
+        <p>© 2025 Shakthi M | Designed with <i class="fa-solid fa-heart" style="color: var(--primary);"></i></p>
+    </footer>
+
+    <!-- AOS Script -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
